@@ -1,0 +1,131 @@
+/* body{
+    background-color: bisque;
+} */
+Section {
+
+    background-color: black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* .card_small{
+    font-size: 80px;
+}  */
+.card_name{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 0.9;
+}
+
+.card_name span {
+    font-size: 14px;
+}
+.footer{
+    margin-top: 2rem;
+    background-color: rgb(54, 53, 53);
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.footer p span{
+    color: orange;
+}
+
+
+  .card_back{
+    transform: rotate(180deg) scale(1.1);
+    background: #141414;
+    display: flex;
+    flex-flow:column wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+}
+.card_back span{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  ul {
+    list-style: none;margin: 10px;
+    padding: 20px;
+    list-style-type:none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card_main {
+    margin: 10px;
+    background-color: rgb(116, 116, 209);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .card_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+  }
+  
+  .card_name {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+ 
+  
+  .card_total  {
+    font-size: 2rem;
+    font-weight: bold;
+    color: antiquewhite;
+  }
+  @media(max-width :700px)
+{
+    .card{
+        width: 100%;
+        height: 290px;
+        margin-right:0;
+        float : none;
+
+    }
+    .card .card_inner,
+    .card .card_back{
+        height: 290px;
+    }
+}
